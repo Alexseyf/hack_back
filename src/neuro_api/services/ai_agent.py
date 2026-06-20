@@ -43,7 +43,7 @@ Procedimento Médico a ser realizado:
 - Nome: {procedimento.get('nome')}
 - Descrição: {procedimento.get('descricao', 'Sem descrição específica')}
 
-Gere as orientações curtas e diretas seguindo estritamente as 5 categorias obrigatórias acima. Limite o texto a 2 frases por categoria, focado exclusivamente na ação prática que o profissional de saúde deve tomar.
+Gere as orientações curtas e diretas seguindo estritamente as 5 categorias obrigatórias acima. Limite o texto a 2 frases por categoria, focado exclusivamente na ação prática que o profissional de saúde deve tomar. NUNCA retorne uma informação que não esteja diretamente relacionada ao perfil do paciente e ao procedimento médico.
 """
     
     response = client.models.generate_content(
