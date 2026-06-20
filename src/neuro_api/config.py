@@ -19,11 +19,7 @@ class Settings(BaseSettings):
     supabase_service_role_key: str
 
     # CORS
-    cors_origins: list[str] = [
-        "http://localhost:3000",
-        "http://localhost:3001",
-        "http://127.0.0.1:3000",
-    ]
+    cors_origins: list[str] = ["*"]
 
     # API
     api_prefix: str = "/api"
