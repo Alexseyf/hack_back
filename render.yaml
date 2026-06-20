@@ -2,6 +2,7 @@ services:
   - type: web
     name: neuro-api
     env: python
+    plan: free
     # O comando de build instala as dependências do requirements.txt e o próprio pacote local da API
     buildCommand: "pip install -r requirements.txt && pip install -e ."
     # O Render injeta automaticamente a variável de ambiente $PORT
